@@ -19,6 +19,8 @@ return [
     /*
      * Theme (standard, grey and white.)
      */
+    'style' => 'standard',
+
     'theme' => 'standard',
 
     /*

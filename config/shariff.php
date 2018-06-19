@@ -9,11 +9,11 @@ return [
     /*
      * Cache configuration
      */
-    'cache'    => [
-        // Default cache time in seconds
-        'ttl'    => 60,
+    'cache' => [
+        // Default cache time in minutes
+        'ttl' => 60,
         // Cache key prefix to avoid collisions
-        'prefix' => 'shariff'
+        'prefix' => 'shariff:'
     ],
 
     /*
@@ -59,7 +59,9 @@ return [
      *
      * Falls back to the request base URL
      */
-    'domain'   => '',
+    'domains' => [
+        'www.hfo-telecom.de'
+    ],
 
     /*
      * Globally enabled services

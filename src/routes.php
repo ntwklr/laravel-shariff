@@ -5,7 +5,7 @@ Route::group([
     'as' => 'shariff.',
     'middleware' => ['web']
 ], function () {
-    Route::post(config('shariff.url'), [
+    Route::get(config('shariff.url'), [
         'uses' => 'ShariffController@backend',
         'as' => 'backend',
     ]);

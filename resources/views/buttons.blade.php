@@ -1,3 +1,6 @@
+@push('styles')
+    <link rel="stylesheet" href="{{ mix('/vendor/shariff/shariff.css') }}">
+@endpush
 <div class="shariff" data-backend-url="{{ route('shariff.backend') }}"
         data-url="{{ isset($url) ? $url : Request::url() }}"
         data-theme="{{ isset($theme) ? $theme : config('shariff.theme') }}"

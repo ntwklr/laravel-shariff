@@ -66,7 +66,7 @@ class Cache implements CacheInterface
     {
         $key = $this->getKey($key);
         $ttl = $this->configurationRepository->get('shariff.cache.ttl');
-        $this->cacheRepository->add($key, $content, $ttl);
+        $this->cacheRepository->add($key, $content, now()->addSeconds($ttl));
     }
     /**
      * Calculates the internal cache key

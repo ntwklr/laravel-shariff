@@ -10,8 +10,8 @@ return [
      * Cache configuration
      */
     'cache' => [
-        // Default cache time in minutes
-        'ttl' => 60,
+        // Default cache time in seconds
+        'ttl' => 3600,
         // Cache key prefix to avoid collisions
         'prefix' => 'shariff:'
     ],
